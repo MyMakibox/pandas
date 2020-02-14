@@ -249,7 +249,7 @@ keep_date_col : bool, default False
     keep the original columns.
 date_parser : function, optional
     Function to use for converting a sequence of string columns to an array of
-    datetime instances. The default uses ``dateutil.parser.parser`` to do the
+    datetime instances. The default uses ``dateutil.parser.parse`` to do the
     conversion. Pandas will try to call `date_parser` in three different ways,
     advancing to the next if an exception occurs: 1) Pass one or more arrays
     (as defined by `parse_dates`) as arguments; 2) concatenate (row-wise) the
